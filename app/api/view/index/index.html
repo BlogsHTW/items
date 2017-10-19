@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/static/css/mui.min.css"/>
+    <style>
+    	#mui-header{
+    		height:auto;
+    	}
+    	#mui-header-img{
+    		margin-left:80px;
+    	}
+    </style>
+</head>
+<body>
+	  <header class="mui-bar mui-bar-nav" id=mui-header>
+            <img src="/static/images/logo.png" id="mui-header-img"/>
+    </header>
+    <div class="mui-content">
+    	 <div id="slider" class="mui-slider" >
+    	   <div class="mui-slider-group mui-slider-loop">
+    	     <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+    	     <div class="mui-slider-item mui-slider-item-duplicate">
+    	       <a href="#">
+    	         <img src="http://placehold.it/400x300">
+    	       </a>
+    	     </div>
+    	     <!-- 第一张 -->
+    	     <div class="mui-slider-item">
+    	       <a href="#">
+    	         <img src="http://placehold.it/400x300">
+    	       </a>
+    	     </div>
+    	     <!-- 第二张 -->
+    	     <div class="mui-slider-item">
+    	       <a href="#">
+    	         <img src="http://placehold.it/400x300">
+    	       </a>
+    	     </div>
+    	     <!-- 第三张 -->
+    	     <div class="mui-slider-item">
+    	       <a href="#">
+    	         <img src="http://placehold.it/400x300">
+    	       </a>
+    	     </div>
+    	     <!-- 第四张 -->
+    	     <div class="mui-slider-item">
+    	       <a href="#">
+    	         <img src="http://placehold.it/400x300">
+    	       </a>
+    	     </div>
+    	     <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+    	     <div class="mui-slider-item mui-slider-item-duplicate">
+    	       <a href="#">
+    	         <img src="http://placehold.it/400x300">
+    	       </a>
+    	     </div>
+    	   </div>
+    	   <div class="mui-slider-indicator">
+    	     <div class="mui-indicator mui-active"></div>
+    	     <div class="mui-indicator"></div>
+    	     <div class="mui-indicator"></div>
+    	     <div class="mui-indicator"></div>
+    	   </div>
+    	 </div>
+       <ul class="mui-table-view mui-grid-view mui-grid-9">
+       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+           <a href="#">
+               <span class="mui-icon mui-icon-home"></span>
+               <div class="mui-media-body">文章</div>
+           </a>
+       </li>
+       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+           <a href="#">
+               <span class="mui-icon mui-icon-compose"></span>
+               <div class="mui-media-body">日志</div>
+           </a>
+       </li>
+       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+           <a href="#">
+               <span class="mui-icon mui-icon-image"></span>
+               <div class="mui-media-body">相册</div>
+           </a>
+       </li>
+       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+           <a href="#">
+               <span class="mui-icon mui-icon-location"></span>
+               <div class="mui-media-body">关于我</div>
+           </a>
+       </li>
+       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+           <a href="#">
+               <span class="mui-icon mui-icon-search"></span>
+               <div class="mui-media-body">随笔</div>
+           </a>
+       </li>
+       <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+           <a href="#">
+               <span class="mui-icon mui-icon-chatboxes"></span>
+               <div class="mui-media-body">评论</div>
+           </a>
+       </li>
+      </ul>
+      <div class="mui-card">
+      <!--	文章推荐-->
+      	<div>
+      		<span>文章推荐</span>
+      	</div>
+      	<div class="mui-card-header">
+      		<!--文章内容的头部-->
+      	</div>
+      	<div class="mui-card-content">
+      	 <!--文章内容区域-->
+      	</div>
+      	<div class="class-card-footer">
+      		<!--文章页脚-->
+      	</div>
+      </div>
+     <ul class="mui-pagination">
+         <li class="mui-disabled">
+             <span> &laquo; </span>
+         </li>
+         <li class="mui-active">
+             <a href="#">1</a>
+         </li>
+         <li>
+             <a href="#">2</a>
+         </li>
+         <li>
+             <a href="#">&raquo;</a>
+         </li>
+     </ul>
+    </div>
+    <script src="/static/js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    mui.init()
+    </script>
+</body>
+</html>

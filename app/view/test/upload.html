@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/css/uploadify.css" />
+		<script src="/static/js/jquery-1.4.4.js"></script>
+		<script src="/static/js/jquery.uploadify.js"></script>
+	</head>
+	<body>
+		<h2>图片上传接口测试</h2>
+		<form>
+			<div id="queue"></div>
+			<input type="file" name="img" id="file_upload"/>
+		</form>
+		<div>
+			<img  src="" id="img" style="width:120px;height:60px;"/>
+			<label style="color:#000077" id="notice"></label>
+		</div>
+		<script type="text/javascript">
+			var url="/test/upload_two";
+			$(function(){
+				$("#file_upload").uploadify({
+					'width':120,
+					'height':30,
+					'method':'post',
+					'swf':'/static/css/uploadify.swf',
+					'uploader':url,
+					'buttonText':'上传图片',
+					'fileTypeExts':'*.jpg;*.png;*.jpeg',
+					 'buttonCursor': 'hand',
+					 'fileObjName':'img',
+					/*上传开始触发的事件*/
+					onUploadSuccess:function(file,data,response){
+						if(response){
+						  var info=JSON.parse(data);
+						  $("#img").attr("src","/test/"+info.data);
+						  $("#notice").html(info.msg);
+						}
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

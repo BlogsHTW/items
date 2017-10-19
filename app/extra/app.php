@@ -1,0 +1,30 @@
+<?php
+ return [
+     //aes加密密钥
+     'aeskey'=>'wangleiaizhuxiaoqing',
+     //api中的accessKey
+     'ak'=>'LTAIUDNWrQQooxH4',
+     //api中的accessKeySecret
+     'aks'=>'8F9R1XTJ9AIB9rkkf2KHL78dliCRBS',
+     //短信签名
+     'signName'=>'HTW博客',
+     //短信模板ID
+     'templateCode'=>'SMS_104285026',
+     //短信流水号
+     'outId'=>'wanglei520',
+     //短信接收的队列名称
+     'queueName'=>'Alicom-Queue-1647601722251905-SmsReport',
+     //短信接收信息类型
+     'messageType'=>'SmsReport',
+     //验证码失效时间
+     ' invalidTime'=>60,
+     //登录token失效时间
+     'login_invalid_time'=>7,
+     //密码加密的key
+     'password_key'=>'wanglei520',
+     //微博登录的key与secret
+     'app_key'=>'374300894',
+     'app_secret'=>'63aa61b3ead3cb9141890564465f1b25',
+     //微博授权的回调地址
+     'weibo_back_url'=>'http://api.blogs.cn/index.php/api/callback',
+ ];
